@@ -15,7 +15,7 @@
 .skills-container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     height: 70vh;
 
@@ -25,42 +25,21 @@
     display: none
     }
 
-    @for $i from 1 through 9 {
-        .skills-container {
-
-            // :nth-child(1-9)
-            &:nth-child(#{$i}) {
-
-                // Delay the animation. Delay increases as items loop.
-                animation-delay: $i * (1s);
-            }
-        }
-    }
-
     .skill-box{
         color: white;
         display: flex;
-        font-size:80px;
+        font-size:90px;
         flex-direction: column;
         align-items: center ;
         transition: 0.3s;
-        padding: 20px;
+        width: 2em;
+
 
         &:hover{
             color:$color-main;
+            flex-grow:2;
+            font-size:100px;
 
-
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                height: 2px;
-                background: $color-main;
-                left: 0;
-                right: 0;
-                transform: scaleX(0);
-
-            }
     }
     .skill-text{
         font-size: 30px;
@@ -69,4 +48,8 @@
     }
 }
 
-
+@media (min-width: 8000px) {
+    .skill-box {
+       padding: 80px;
+    }
+}
