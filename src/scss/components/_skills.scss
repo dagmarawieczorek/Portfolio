@@ -1,0 +1,72 @@
+.skills{
+    $c : rgba(black, 0.1);
+    height:100vh;
+    min-height: 800px;
+    background:
+            linear-gradient($c, $c),
+            linear-gradient(90deg, $c, transparent, $c),
+            url(../images/main-banner3.jpg) center bottom / cover no-repeat;overflow: hidden;
+    position: relative;
+    margin:0;
+    align-items: center;
+
+}
+
+.skills-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 70vh;
+
+
+    li{
+        text-decoration: none;
+    display: none
+    }
+
+    @for $i from 1 through 9 {
+        .skills-container {
+
+            // :nth-child(1-9)
+            &:nth-child(#{$i}) {
+
+                // Delay the animation. Delay increases as items loop.
+                animation-delay: $i * (1s);
+            }
+        }
+    }
+
+    .skill-box{
+        color: white;
+        display: flex;
+        font-size:80px;
+        flex-direction: column;
+        align-items: center ;
+        transition: 0.3s;
+        padding: 20px;
+
+        &:hover{
+            color:$color-main;
+
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                height: 2px;
+                background: $color-main;
+                left: 0;
+                right: 0;
+                transform: scaleX(0);
+
+            }
+    }
+    .skill-text{
+        font-size: 30px;
+    }
+
+    }
+}
+
+
