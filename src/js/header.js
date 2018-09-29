@@ -2,7 +2,7 @@ function header() {
     const header = document.querySelector('.page-header');
 
     window.addEventListener('scroll', function(e) {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 800) {
             header.classList.add('page-header-fixed');
         } else {
             header.classList.remove('page-header-fixed');

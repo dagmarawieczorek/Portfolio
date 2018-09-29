@@ -4,13 +4,19 @@
     left:0;
     width:100%;
     z-index: 1000;
-    height: 100px;
+    height: 90px;
     transition: 0.5s;
+    &:hover{
+        background: rgba(white, 0.1);
+        box-shadow: 0 3px 4px rgba($color-main, 0.2);
+    }
 }
 .page-header-fixed {
-    background: #222;
+    background: rgba($color-second, 0.95);
     height: 80px;
-    box-shadow: 0 2px 4px rgba(black, 0.3);
+    box-shadow: 0 2px 4px rgba($color-main, 0.4);
+    .page-nav-text,
+    .page-nav-list a { color: $color-main;}
 }
 
 
@@ -39,9 +45,9 @@
 .page-nav-list a {
     padding:15px 20px;
     display: block;
-    font-size:15px;
-    font-weight:bold;
-    color: rgba(white, 0.4);
+    font-size:19px;
+    font-weight:400;
+    color: rgba(white, 0.8);
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
