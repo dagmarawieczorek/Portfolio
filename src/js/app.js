@@ -6,6 +6,6 @@ import typerFun from "./_typer";
 $(function() {
 
     header();
-scroll();
+        scroll();
     typerFun();
 });
