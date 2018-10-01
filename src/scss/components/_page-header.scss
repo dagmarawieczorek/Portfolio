@@ -12,11 +12,15 @@
     }
 }
 .page-header-fixed {
-    background: rgba($color-second, 0.95);
+    background: rgba($color-second, 0.85);
     height: 80px;
     box-shadow: 0 2px 4px rgba($color-main, 0.4);
     .page-nav-text,
     .page-nav-list a { color: $color-main;}
+
+    &:hover{
+        background: $color-second
+    }
 }
 
 
