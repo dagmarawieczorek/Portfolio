@@ -79,8 +79,13 @@
 	.page-header {
         position: absolute;
         padding-top:30px;
+        &:hover{
+            background: none;
+            box-shadow:none;
+        }
+
 	}
-	.page-header.sticky { /* tutaj już header nie jest przyklejony więc nie ma sensu go zmieniać */
+	.page-header.sticky{
 		background: transparent;
 		box-shadow: none;
 	}
@@ -97,8 +102,13 @@
     .page-nav-list li {
         width:50%;
         border:1px solid rgba(#fff, 0.2);
+        min-width:150px;
+
+
     }
-    .page-nav-list a:hover {
+
+
+    .page-nav-list li:hover {
         background: rgba(#fff, 0.1)
     }
 }

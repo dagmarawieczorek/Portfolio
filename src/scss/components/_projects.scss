@@ -1,12 +1,17 @@
 .projects{
-    $c : rgba(black, 0.1);
-    height:100vh;
+    $c: rgba(white, 0.1);
+    height: 60vh;
     min-height: 800px;
-    background:
-            linear-gradient($c, $c),
-            linear-gradient(90deg, $c, transparent, $c),
-            url(../images/main-banner3.jpg) center bottom / cover no-repeat;
+    background: linear-gradient($c, $c);
     overflow: hidden;
-    position: relative;
-    margin:0;
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+ }
+
+.project-box img{
+    height: 600px;
 }
