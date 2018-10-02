@@ -7,15 +7,32 @@
         color: black;
         text-decoration: none;
         padding:10px;
+        position: relative;
         i{
            font-size:40px;
         }
         &:hover{
-        color: rgba(black, 0.6)
+        color: $color-main;
 
         }
     }
 }
+
+.contact a::after {
+    content: "";
+    position: absolute;
+    bottom:0;
+    height:2px;
+    background: $color-main;
+    left:0;
+    right:0;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+.contact a:hover::after {
+    transform: scaleX(1);
+}
+
 
 .contact-media{
     width: 40%;

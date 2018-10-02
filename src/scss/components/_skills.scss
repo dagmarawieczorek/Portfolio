@@ -1,12 +1,12 @@
 .skills {
     $c: rgba(black, 0.1);
-    height: 100vh;
+    height: 60vh;
     min-height: 800px;
     background: linear-gradient($c, $c),
     linear-gradient(90deg, $c, transparent, $c),
     url(../images/beach.jpg) center bottom / cover no-repeat;
     overflow: hidden;
-    position: sticky;
+background-attachment: fixed;
     margin: 0;
     display: flex;
     align-items: center;
@@ -37,26 +37,44 @@
         width: 2em;
         padding: 40px;
         border-radius: 30%;
-
+        position: sticky;
         &:hover {
             color: $color-main;
-            background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(244, 247, 247, 0) 60%);
             transition: 0.8s;
 
         }
         .skill-text {
             font-size: 30px;
+            text-align: center;
         }
 
     }
 }
 
-@media (max-width: 600px) {
+.skill-box::after {
+    content: "";
+    position: absolute;
+    bottom:0;
+    height:2px;
+    background: $color-main;
+    left:0;
+    right:0;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+.skill-box:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+
+@media (max-width: 900px) {
     .skills-container {
         flex-direction: row;
         width: 100%;
         .skill-box {
-            font-size: 55px;
+            padding: 15px;
             &:hover{
 
                 .skill-text{
@@ -73,4 +91,19 @@
         }
     }
 
+}
+
+
+@media (max-width: 600px){
+    .skill-box {
+        font-size: 45px;
+        padding: 10px;
+        &:hover{
+
+            .skill-text{
+                display: inline-block;
+                font-size: 25px;
+            }
+        }
+    }
 }
