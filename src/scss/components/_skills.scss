@@ -8,11 +8,16 @@
             url(../images/main-banner3.jpg) center bottom / cover no-repeat;overflow: hidden;
     position: relative;
     margin:0;
+    display: flex;
     align-items: center;
+    flex-direction: column;
+
+
 
 }
 
 .skills-container{
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,17 +33,19 @@
     .skill-box{
         color: white;
         display: flex;
-        font-size:90px;
+        font-size:80px;
         flex-direction: column;
         align-items: center ;
-        transition: 0.3s;
-        width: 2em;
+        transition: 0.8s;
+        padding:30px;
+        border-radius: 30%;
+
 
 
         &:hover{
             color:$color-main;
-            flex-grow:2;
-            font-size:100px;
+            background: rgba(white,0.4);
+            transition: 0.8s;
 
     }
     .skill-text{
@@ -48,8 +55,14 @@
     }
 }
 
-@media (min-width: 8000px) {
-    .skill-box {
-       padding: 80px;
+@media (max-width: 600px) {
+    .skills-container {
+        width: 100%;
+
+        .skills-box{
+            font-size: 30px !important;
+        }
     }
+
+
 }
