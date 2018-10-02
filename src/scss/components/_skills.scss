@@ -1,22 +1,20 @@
-.skills{
-    $c : rgba(black, 0.1);
-    height:100vh;
+.skills {
+    $c: rgba(black, 0.1);
+    height: 100vh;
     min-height: 800px;
-    background:
-            linear-gradient($c, $c),
-            linear-gradient(90deg, $c, transparent, $c),
-            url(../images/main-banner3.jpg) center bottom / cover no-repeat;overflow: hidden;
-    position: relative;
-    margin:0;
+    background: linear-gradient($c, $c),
+    linear-gradient(90deg, $c, transparent, $c),
+    url(../images/beach.jpg) center bottom / cover no-repeat;
+    overflow: hidden;
+    position: sticky;
+    margin: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
 
-
-
 }
 
-.skills-container{
+.skills-container {
     width: 80%;
     display: flex;
     align-items: center;
@@ -24,45 +22,55 @@
     flex-wrap: wrap;
     height: 70vh;
 
-
-    li{
+    li {
         text-decoration: none;
-    display: none
+        display: none
     }
 
-    .skill-box{
-        color: white;
+    .skill-box {
+        color: rgba(white, 0.8);
         display: flex;
-        font-size:80px;
+        font-size: 80px;
         flex-direction: column;
-        align-items: center ;
+        align-items: center;
         transition: 0.8s;
-        padding:30px;
+        width: 2em;
+        padding: 40px;
         border-radius: 30%;
 
-
-
-        &:hover{
-            color:$color-main;
-            background: rgba(white,0.4);
+        &:hover {
+            color: $color-main;
+            background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(244, 247, 247, 0) 60%);
             transition: 0.8s;
 
-    }
-    .skill-text{
-        font-size: 30px;
-    }
+        }
+        .skill-text {
+            font-size: 30px;
+        }
 
     }
 }
 
 @media (max-width: 600px) {
     .skills-container {
+        flex-direction: row;
         width: 100%;
+        .skill-box {
+            font-size: 55px;
+            &:hover{
 
-        .skills-box{
-            font-size: 30px !important;
+                .skill-text{
+                    display: inline-block;
+                    font-size: 25px;
+                }
+            }
+        }
+
+
+        .skill-text {
+           display:none;
+
         }
     }
-
 
 }
