@@ -3,25 +3,23 @@ import scroll from "./scroll";
 // import gif from "./showgif";
 
 
-
-$(function() {
+$(function () {
 
     header();
     scroll();
     // gif();
 
-    const overlay = document.querySelector('.project-box-image-overlay');
-    const $frame= $(".project-box-image")
+    let overlay = document.querySelector('.project-box-image-overlay');
     const box = document.querySelector('.project-box-image-overlay');
-    let img = document.querySelector(".project-box-image img");
-    // console.log(img);
+    let img = document.getElementById("foodPlannerImg");
 
-     overlay.addEventListener("click", function(){
+    box.addEventListener("click", function () {
+             $(overlay).addClass("hidden");
+            $(img).attr("src","https://github.com/dagmarawieczorek/FoodPlannerApp/blob/master/images/gif-test-4.gif?raw=true");
 
-   $(this).toggleClass("hidden");
+    });
 
-   // $img.attr('src','https://github.com/dagmarawieczorek/FoodPlannerApp/blob/master/images/gif-test-4.gif');
 
-    })
+
 
 });
