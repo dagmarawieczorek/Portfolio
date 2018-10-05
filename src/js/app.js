@@ -18,7 +18,7 @@ $(function () {
         gifVisible = !gifVisible;
 
         $(overlay).toggleClass("hidden");
-        $(img).attr("src", gifVisible? "https://github.com/dagmarawieczorek/FoodPlannerApp/blob/master/images/gif-test-4.gif?raw=true":"dist/images/foodplanner.png");
+        $(img).attr("src", gifVisible? "https://github.com/dagmarawieczorek/FoodPlannerApp/blob/master/images/gif-test-4.gif?raw=true":"images/foodplanner.png");
 
     });
 
