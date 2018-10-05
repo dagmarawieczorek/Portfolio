@@ -1,3 +1,5 @@
+
+
 .projects{
     $c: rgba(white, 0.1);
     height: 60vh;
@@ -17,6 +19,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
+    position: relative;
+
+    &::after, &::before{
+        content:"";
+        width: 20px;
+        height: 20px;
+        position:absolute;
+        top: 50%;
+
+
+
+
+    }
+    &::before{
+        left:5%;
+        border-left: rgba(black,0.5) 4px solid;
+        border-top: rgba(black,0.8) 4px solid;
+        transform:rotate(-45deg);
+
+    }
+
+
+    &::after{
+        right: 5%;
+        transform:rotate(45deg);
+        border-right: rgba(black,0.5) 4px solid;
+        border-top: rgba(black,0.8) 4px solid;
+
+    }
 }
 .project-box{
     display: flex;
@@ -33,10 +65,13 @@
 
 
  .project-box-frame{
-     background: url(../images/frame.png) left top / cover no-repeat;
+     background: url(../images/frame.png) left top;
+     background-size: contain;
      width: 285px;
     height: 585px;
      position: relative;
+     padding: 0;
+     margin:0;
 }
 
 .project-box-image{
@@ -114,6 +149,17 @@
     }
     100% {
     left:45%;
+    }
+}
+
+
+@media(max-width:600px){
+    .project-box-info{
+        width: 30%;
+            margin-left: 10px;
+        span{
+            font-size: 18px;
+        }
     }
 }
 
