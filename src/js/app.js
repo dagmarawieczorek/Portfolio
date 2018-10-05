@@ -9,17 +9,18 @@ $(function () {
     scroll();
     // gif();
 
+    let gifVisible = false;
     let overlay = document.querySelector('.project-box-image-overlay');
-    const box = document.querySelector('.project-box-image-overlay');
+    const box = document.querySelector('.project-box-frame');
     let img = document.getElementById("foodPlannerImg");
 
     box.addEventListener("click", function () {
-             $(overlay).addClass("hidden");
-            $(img).attr("src","https://github.com/dagmarawieczorek/FoodPlannerApp/blob/master/images/gif-test-4.gif?raw=true");
+        gifVisible = !gifVisible;
+
+        $(overlay).toggleClass("hidden");
+        $(img).attr("src", gifVisible? "https://github.com/dagmarawieczorek/FoodPlannerApp/blob/master/images/gif-test-4.gif?raw=true":"dist/images/foodplanner.png");
 
     });
-
-
 
 
 });
