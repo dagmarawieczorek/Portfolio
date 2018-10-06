@@ -6,4 +6,4 @@
 alt="sample of app" width="400" height="auto" border="10" /></a>
 
 
-https://dagmarawieczorek.github.io/PortfolioPage/
+https://dagmarawieczorek.github.io/Portfolio
