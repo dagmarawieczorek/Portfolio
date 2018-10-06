@@ -117,19 +117,16 @@
 }
 
 .project-box-image{
-    width: 260px;
+    width: (100%-20)px;
     height: 460px;
-    position:absolute;
+    position: relative;
     top: 63px;
     left: 15px;
 
     img{
-        width: 260px;
-        height: 460px;
-
+width: auto;
+        height: 100%;
     }
-
-
 }
 
 .project-box-image-overlay{
@@ -210,13 +207,30 @@
 //}
 
 
-@media(max-width:600px){
-    .project-box-info{
+@media(max-width:600px) {
+    .project-box-info {
         width: 30%;
-            margin-left: 10px;
-        span{
+        margin-left: 10px;
+        span {
             font-size: 18px;
         }
+
+    }
+
+.project-box-frame {
+    width: 270px;
+    height: 520px;
+}
+    .project-box-image {
+        height: 400px;
+        width: 250px;
+
+    }
+
+    .project-box-image-overlay {
+        height: 400px;
+        width: 240px;
+
     }
 }
 
