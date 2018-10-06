@@ -23,4 +23,14 @@ $(function () {
     });
 
 
+
+
+    $(document).ready(function(){
+        $('.project-slides').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 2
+    });
+    });
+
 });
