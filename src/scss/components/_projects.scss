@@ -54,7 +54,7 @@
 }
 
 .project-box-info{
-  width: 30%;
+width: 30%;
     margin-left: 50px;
 
     span{
@@ -90,9 +90,8 @@ text-align: center;
      background-size: contain;
      width: 285px;
     height: 585px;
-     display: flex;
      position: relative;
-     padding: 0;
+
      margin:0;
 }
 
@@ -216,17 +215,72 @@ width: auto;
 
 
 
-.zombie-img{
-    display:block;
-    height: 300px;
-    width: auto;
+.zombie-box-image{
+padding: 20px;
+}
 
-    img{
-        height: 300px;
-        width: auto;
+.zombie-box-frame{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    margin:0;
+
+    .zombie-box-info{
+        margin-left: 50px;
+        margin-top: 50px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+
+
+        span{
+            font-size: 20px;
+        }
+        h3{
+            text-align: center;
+        }
+
+        a{
+
+            text-align: center;
+            i {
+                font-size: 40px;
+                color: rgba(black, 0.8);
+
+                transition: 1s;
+                &:hover {
+                    font-size: 45px;
+                    color: $color-main;
+                }
+            }
+        }
     }
 }
 
+.zombie-overlay{
+
+    height: 530px;
+    width: 382px;
+    top: 0;
+    background: url("../images/zombie_game.png") left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    border-radius: 35px;
+    position: relative;
+    a{
+        text-decoration: none;
+    }
+
+    &::after{
+        content: "";
+
+    }
+}
 
 .hidden{
     display: none;
