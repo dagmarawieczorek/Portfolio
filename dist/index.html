@@ -19,6 +19,8 @@
           href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
 
 </head>
@@ -177,17 +179,10 @@
 
     <div class="projects-slider">
 
-
         <div class="project-slides">
-
-
             <div class="project-container">
-
-
                 <div class="project-box">
-
                     <div class="project-box-frame">
-
                         <div class="project-box-image ">
                             <img src="images/foodplanner.png" id="foodPlannerImg">
                         </div>
@@ -214,58 +209,98 @@
                                     class="im im-github"></i></a>
 
                         </div>
-
                     </div>
                 </div>
             </div>
 
 
             <div class="project-container">
-
-
                 <div class="zombie-box-frame">
-
                     <div class="zombie-box-image">
-
-
                         <a target="_blank" rel="noopener noreferrer"
-                           href="https://dagmarawieczorek.github.io/zombie-game/" class="project-box-image-overlay zombie-overlay">
-
-                                <h2>
-                                    Click to play
-                                </h2>
+                           href="https://dagmarawieczorek.github.io/zombie-game/"
+                           class="project-box-image-overlay zombie-overlay">
+                            <h2>
+                                Click to play
+                            </h2>
                         </a>
                     </div>
 
 
                     <div class="zombie-box-info">
-                        <h2>Zombe game.</h2>
+                        <h2>Zombie game.</h2>
                         <h3>
                             Shot zombies and score points
                         </h3>
                         <span>
-
                        Website game using css animations, javascript and html. Use mouse to shoot them, defend your house! They are comming!
                             </span>
                         <div class="project-box-info-github">
 
                             <h3>see on GitHub:</h3>
-                            <a href="https://github.com/dagmarawieczorek/zombie-game"> <i
-                                    class="im im-github"></i></a>
+                            <a href="https://github.com/dagmarawieczorek/zombie-game">
+                                <i class="im im-github"></i>
+                            </a>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
-
+        </div>
+    </div>
 
 </section>
+
+
 <section id="hobbies" class="hobbies">
 
-    
-    <img src="http://place-hold.it/700">
+    <header class="section-header">
+        <h2 class="section-header-title">
+            Hobbies
+        </h2>
+    </header>
+
+
+    <div class="hobbies-container">
+
+
+        <a data-fancybox="gallery" href="images/knitting.jpg" class="hobbies-link">
+            <div class="hobbies-box">
+                <img src="images/knitting_small.jpg">
+                <h3>
+                    Knitting
+                </h3>
+            </div>
+        </a>
+
+        <a data-fancybox="gallery" href="images/ukulele.jpg" class="hobbies-link">
+            <div class="hobbies-box">
+                <img src="images/ukulele.jpg">
+                <h3>
+                   Ukulele
+                </h3>
+            </div>
+        </a>
+
+
+        <a data-fancybox="gallery" href="images/norway.jpg" class="hobbies-link">
+            <div class="hobbies-box">
+                <div class="hobbies-img-box">
+                    <img src="images/norway.jpg">
+                </div>
+
+                <h3>
+                  Traveling
+                </h3>
+            </div>
+        </a>
+
+
+
+    </div>
+
+
+    <!--<a data-fancybox="gallery" href="images/beach.JPG"><img src="images/beach.jpg"></a>-->
+
 </section>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
