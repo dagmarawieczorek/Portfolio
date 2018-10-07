@@ -28,6 +28,7 @@ flex-direction: column;
         background: white;
         box-shadow: 5px 5px rgba(black,0.2);
         align-items: center;
+        position: relative;
 
         img{
                 height: 200px;
@@ -38,7 +39,28 @@ flex-direction: column;
                 font-weight: normal;
                 font-size: 25px;
         }
+
+
 }
+
+.hobbies-box::before, .hobbies-box::after{
+        content: "";
+      position: absolute;
+        width: 80px;
+        height:30px;
+        background: rgba($color-main, 0.8);
+
+}
+
+.hobbies-box::before{
+        top: 0;
+        transform: translate(0, -50%) rotate(9deg);
+}
+.hobbies-box::after{
+        bottom: 0;
+        transform: translate(0, 50%) rotate(8deg);;
+}
+
 
 .hobbies-link{
         color: black;
