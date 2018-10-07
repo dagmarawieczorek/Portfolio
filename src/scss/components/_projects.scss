@@ -262,9 +262,9 @@ padding: 20px;
 }
 
 .zombie-overlay{
-
+    $c:rgba(black, 0.8);
     height: 530px;
-    width: 382px;
+    width: 400px;
     top: 0;
     background: url("../images/zombie_game.png") left top;
     background-repeat: no-repeat;
@@ -272,12 +272,18 @@ padding: 20px;
     overflow: hidden;
     border-radius: 35px;
     position: relative;
-    a{
-        text-decoration: none;
-    }
 
-    &::after{
-        content: "";
+        text-decoration: none;
+
+
+    &::before{
+        //position: absolute;
+        //content: "";
+        //height: 530px;
+        //width: 400px;
+        //$c:rgba(black, 0.8);
+        //background:
+        //        linear-gradient(90deg, $c, transparent, $c);
 
     }
 }
