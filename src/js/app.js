@@ -26,6 +26,7 @@ $(function () {
 
 
     $(document).ready(function(){
+
         $('.project-slides').slick({
             infinite: true,
             arrows: true,
@@ -33,6 +34,15 @@ $(function () {
             dots: true,
 
     });
+
+        $('.hobbies-container').slick({
+            infinite: true,
+            arrows: true,
+            slidesToShow: 3,
+            dots: true,
+
+    });
+
     });
 
 });

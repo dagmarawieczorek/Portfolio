@@ -14,25 +14,29 @@
     }
 
 .hobbies-container{
-        height: 60vh;
+
+        height: 400px;
+        width: 1000px;
         display: flex;
         flex-direction: row;
+
 }
 
 .hobbies-box{
         margin:10px;
         display: flex;
-        height: 300px;
+        height: 350px;
         padding: 20px;
 flex-direction: column;
         background: white;
         box-shadow: 5px 5px rgba(black,0.2);
         align-items: center;
         position: relative;
+        transform: rotate(2deg);
 
         img{
-                height: 200px;
-                width: 200px;
+                height: 250px;
+                width: 250px;
         }
 
         h3{
@@ -46,24 +50,35 @@ flex-direction: column;
 .hobbies-box::before, .hobbies-box::after{
         content: "";
       position: absolute;
-        width: 80px;
+        width: 100px;
         height:30px;
-        background: rgba($color-main, 0.8);
+        background: rgba(#633b2d, 0.8);
+        color: #633b2d;
+        box-sizing: content-box;
+        border-left: 1px dotted #452721;
+        border-right:  1px dotted #452721;
+        box-shadow: 1px 1px rgba(#452721, 0.2);
 
 }
 
 .hobbies-box::before{
         top: 0;
-        transform: translate(0, -50%) rotate(9deg);
+        transform: translate(0, -50%) rotate(3deg);
 }
 .hobbies-box::after{
         bottom: 0;
-        transform: translate(0, 50%) rotate(8deg);;
+        transform: translate(0, 50%) rotate(-2deg);
 }
 
 
 .hobbies-link{
+        height: 500px;
         color: black;
         text-decoration: none;
 
+}
+
+.slick-list .draggable{
+
+        width: 80% !important;
 }
