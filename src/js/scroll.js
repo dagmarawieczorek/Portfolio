@@ -5,7 +5,7 @@ function scroll() {
     function displaySkills() {
 
         for (let i = 0; i <skills.length ; i++) {
-            skills[i].classList.add('skill-box');
+            skills[i].classList.add('skill-scroll');
         }
 
 
