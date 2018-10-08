@@ -10,8 +10,35 @@
     overflow: hidden;
     position: relative;
             background-attachment: fixed;
+
+            display: flex;
+            justify-content: center;
+
 }
 
+.page-hero-scroll{
+top: 80%;
+right: 20%;
+
+height: 80px;
+width: 50px;
+border-radius: 40%;
+border: 2px dotted $color-main;
+background: rgba(white, 0.3);
+position: absolute;
+
+&::after{
+left: 50%;
+transform: translate(-50%, 50%);
+position: absolute;
+content: "";
+height: 20px;
+border-radius: 40%;
+border: 2px dotted $color-main;
+width: 10px;
+background: rgba($color-main, 0.5);
+}
+}
 
 @media (max-width: 900px) {
 .page-hero{
