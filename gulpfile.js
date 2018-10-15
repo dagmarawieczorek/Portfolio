@@ -69,7 +69,7 @@ gulp.task("es6", function(cb) { //https://github.com/webpack/docs/wiki/usage-wit
         cb();
         browserSync.reload();
     })
-})
+});
 
 
 gulp.task("watch", function() {
