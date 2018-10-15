@@ -12,42 +12,57 @@
             background-attachment: fixed;
 
             display: flex;
-            justify-content: center;
+           align-items: flex-end;
 
 }
 
 .page-hero-scroll{
-right: 20%;
-bottom: 10%;
-
+position: absolute;
+bottom: 10vh;
+right: 10%;
 height: 60px;
 width: 40px;
-border-radius: 40%;
-border: 2px dotted $color-main;
-background: rgba(#C3D3D6, 0.9);
-position: absolute;
-box-shadow: 2px 2px 1px 1px rgba($color-main, 0.5);
 
-&::after{
-left: 50%;
-top: 25%; transform: translate(-50%, -50%);
-position: absolute;
-content: "";
-height: 15px;
-border-radius: 50%;
-border: 2px dotted $color-main;
-width: 8px;
-background: rgba($color-main, 0.8);
-  animation: scrollAnim  1.4s 0.2s infinite ease;
-}
+
+   &::after, &::before{
+        content:"";
+        width: 40px;
+        height: 40px;
+        position:absolute;
+
+        border-right: rgba(white,0.5) 5px solid;
+        border-bottom: rgba(white,0.8) 5px solid;
+        transform:rotate(45deg);
+       box-shadow: 5px 5px 8px 0px rgba(84,84,102,0.65);
+
+
+    }
+    &::before{
+    top: 5px;
+        animation: scroll2Anim 1.5s 0.2s infinite ease;
+
+    }
+    &::after{
+      animation: scroll1Anim 1.5s 0.2s infinite ease;
+        top: 30px;
+    }
 }
 
-@keyframes scrollAnim {
+@keyframes scroll1Anim {
   50% {
-    top:75%;
+    top:60px
     }
     100% {
-    top:25%;
+    top:30px;
+    }
+}
+
+@keyframes scroll2Anim {
+  50% {
+    top:30px
+    }
+    100% {
+    top:5px;
     }
 }
 
